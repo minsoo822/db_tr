@@ -30,6 +30,14 @@ ALTER TABLE member2 drop COLUMN nick;
 DELETE FROM member2 WHERE seq = 1;
 
 
+
 -- commit / rollback
 
 SELECT * FROM member2;
+
+-- 데이터 수정
+
+UPDATE member2 SET 
+	name = "Teo"
+    , dob ="1992.06.22"
+WHERE seq = 1;
