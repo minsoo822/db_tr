@@ -41,3 +41,35 @@ UPDATE member2 SET
 	name = "Teo"
     , dob ="1992.06.22"
 WHERE seq = 1;
+
+-- where
+
+SELECT * FROM member
+WHERE 1=1
+-- AND name like 'To%'
+-- AND name like '%ny'
+AND id like '%d%w%'
+;
+
+SELECT *FROM member2
+WHERE 1=1
+AND delNy = 0
+AND delNy > 1
+AND delNy >=1
+AND delny between 0 and 1
+;
+
+SELECT * FROM member
+WHERE 1=1
+AND actor_type = ''
+;
+
+-- 내용 수정
+UPDATE post_odition SET
+	aga = 0
+
+WHERE seq = 1
+ 
+
+
+
