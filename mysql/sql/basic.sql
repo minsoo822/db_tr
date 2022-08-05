@@ -68,8 +68,8 @@ AND actor_type = ''
 UPDATE post_odition SET
 	aga = 0
 
-WHERE seq = 1
- 
+WHERE seq = 1;
+
 
 
 
