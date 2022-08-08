@@ -27,12 +27,34 @@ inner join actor_award b on b.member_seq = a.seq
 -- 로그인
 
 -- 메인.오디션정보
-
-
+SELECT
+	name
+    ,producer
+    ,casting
+    ,age
+from post_odition
+WHERE 1=1
+	AND seq = 13
+    AND seq = 13
+    AND seq = 13
+    AND seq = 13
+    
+;
 
 -- 메인.배우프로필
+SELECT 
+	a.name
+    ,a.age
+FROM member a
+;	
 
 -- 메인.투어정보
+SELECT
+	a.seq
+    ,a.type
+    ,a.name
+    ,a.address
+FROM tour_post a    
 
 -- 투어정보목록
 
