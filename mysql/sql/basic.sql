@@ -71,5 +71,7 @@ UPDATE post_odition SET
 WHERE seq = 1;
 
 
+USE baebae;
 
+ALTER TABLE post_odition CHANGE COLUMN con contents varchar(225);
 
