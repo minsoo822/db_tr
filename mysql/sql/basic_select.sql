@@ -45,8 +45,7 @@ limit 0,6
 ;
 
 -- 메인.배우프로필
-SELECT 
-	
+SELECT 	
 	a.name
     ,a.age
 FROM member a
@@ -126,3 +125,27 @@ WHERE 1=1
 	and user_type = 27
 ;
     
+
+SELECT
+	a.seq
+    ,a.name
+    ,a.gender
+	,b.name_type
+FROM member a
+left join company b on b.member_seq = a.seq
+WHERE 1=1
+	and a.user_type = 26
+union ALL
+SELECT
+	a.seq
+    ,a.name
+    ,a.gender
+	,b.name_type
+FROM member a
+left join company b on b.member_seq = a.seq
+WHERE 1=1
+	and a.user_type = 27
+;
+
+
+

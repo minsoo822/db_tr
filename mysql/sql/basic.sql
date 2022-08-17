@@ -75,3 +75,9 @@ USE baebae;
 
 ALTER TABLE post_odition CHANGE COLUMN con contents varchar(225);
 
+
+
+
+
+
+
