@@ -147,5 +147,15 @@ WHERE 1=1
 	and a.user_type = 27
 ;
 
-
+SELECT 
+	a.name
+    ,b.period
+	,b.school_name
+    ,b.major
+    ,b.type
+from member a 
+left join actor_education b on b.member_seq = a.seq 
+WHERE 1=1
+and a.seq = 14
+;    
 
